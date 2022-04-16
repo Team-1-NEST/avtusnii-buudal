@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(34, 34, 34);
+}
+.gameArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 70%;
+    background-image: url(./source/mashin-zam.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+#hun{
+    width: 6%;
+    height: 15%;
+    z-index: 1;
+}
+#blueJeep{
+    position: absolute;
+    width: 15%;
+    height: 8%;
+    top: 70%;
+    animation-name: mashinYavah;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#grayCar{
+    position: absolute;
+    width: 31.9%;
+    height: 11%;
+    visibility: hidden;
+}
+@keyframes mashinYavah {
+    0% {
+        visibility: visible;
+        left: 0%;
+    }
+    100% {
+        visibility: visible;
+        left: 100%;
+    }
+}
+.gameOver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 50%;
+    background-color: black;
+    border-radius: 50px;
+    color: red;
+    font-size: 40px;
+}
