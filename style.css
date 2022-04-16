@@ -23,27 +23,25 @@
     border-radius: 5px;
 }
 #hun{
-    width: 6%;
+    width: 7%;
     height: 15%;
     z-index: 1;
 }
 #blueJeep{
-    position: absolute;
-    width: 15%;
-    height: 8%;
-    top: 70%;
+    position: relative;
+    width: 24%;
+    height: 13%;
     animation-name: mashinYavah;
     animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 #grayCar{
-    position: absolute;
+    position: relative;
     width: 31.9%;
     height: 11%;
-    visibility: hidden;
 }
-@keyframes mashinYavah {
+/* @keyframes mashinYavah {
     0% {
         visibility: visible;
         left: 0%;
@@ -52,7 +50,7 @@
         visibility: visible;
         left: 100%;
     }
-}
+} */
 .gameOver{
     display: flex;
     align-items: center;
